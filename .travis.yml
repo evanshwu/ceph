@@ -1,6 +1,8 @@
 language: cpp
+
+install: ./install-deps.sh
+
 script:
-    - ./install-deps.sh
     - ./do_cmake.sh
     - cd build
     - make
