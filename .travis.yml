@@ -1,7 +1,9 @@
 language: cpp
 os: linux
 
-install: ./install-deps.sh
+before_install: 
+    - sudo apt-get update
+    - ./install-deps.sh
 
 script:
     - ./do_cmake.sh
